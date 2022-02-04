@@ -7,9 +7,7 @@ class Blockchain():
   def __init__(self):
     self.chain = []
     self.pending_transactions = []
-    with open('test.txt') as f:
-        contents = f.read()
-    self.new_block(previous_hash=contents, proof=100)
+    self.new_block(previous_hash="Genesis block", proof=100)
   
   def new_block(self, proof, previous_hash = None):
     block_info = {
