@@ -96,4 +96,11 @@ blockchain.new_block(440)
 t11 = blockchain.new_transaction("Bern", "Tim", '3 Karstcoin')
 blockchain.new_block(442)
 
+
+#Je kan een nieuw block aanmaken door een variatie op deze regel toe te voegen
+#t(n+1) = blockchain.new_transaction("NaamGever", "NaamOntvanger", 'X Karstcoin') | Je kan meerdere transactions toevoegen per block
+#blockchain.new_block(x) | Waarbij x elk  getal mag zijn
+
+#Als je in de oude transactie iets aanpast en de code runt dan geeft hij aan dat de blockchain op dat punt invalid is
+
 #https://github.com/Bart1003/Blockchain-pws-2.0/settings/access?query=filter%3Apending_invitations 
