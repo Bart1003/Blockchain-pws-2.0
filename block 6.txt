@@ -1,0 +1,2 @@
+[{'index': 7, 'transactions': [{'sender': 'Bern', 'recipient': 'Tim', 'amount': '3 Karstcoin'}], 'proof': 442}]
+4dc2c6553d46c0d2bbc1cd2288f0de2ac164400aed92804f4703fd558fe39919

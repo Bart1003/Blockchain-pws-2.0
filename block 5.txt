@@ -1,2 +1,2 @@
-[{'index': 6, 'transactions': [{'sender': 'Bern', 'recipient': 'Tim', 'amount': '3 Karstcoin'}], 'proof': 440}]
+[{'index': 6, 'transactions': [{'sender': 'Bern', 'recipient': 'Tom', 'amount': '3 Karstcoin'}], 'proof': 440}]
 f578fc579a5146556f5c17edc8a51773c7c2b09f3a9f915be405e27dd20080ea

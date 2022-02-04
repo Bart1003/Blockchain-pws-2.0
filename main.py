@@ -93,4 +93,7 @@ blockchain.new_block(420)
 t10 = blockchain.new_transaction("Bern", "Tim", '3 Karstcoin')
 blockchain.new_block(440)
 
+t11 = blockchain.new_transaction("Bern", "Tim", '3 Karstcoin')
+blockchain.new_block(442)
+
 #https://github.com/Bart1003/Blockchain-pws-2.0/settings/access?query=filter%3Apending_invitations 
