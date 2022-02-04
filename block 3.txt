@@ -1,2 +1,2 @@
-[{'index': 4, 'timestamp': 1643987218.058814, 'transactions': [{'sender': 'Tom', 'recipient': 'Bern', 'amount': '2 BTC'}], 'proof': 125}]
-8f4656d01fe8dc4cf3813da76e8fee4c1cf46da428d8f0018c7afb65b3c22976
+[{'index': 4, 'transactions': [{'sender': 'Tim', 'recipient': 'Bern', 'amount': '2 Karstcoin'}], 'proof': 125}]
+168836caacc011dedb150cce91bc65e4120e39d70ecb54cf2af7c758766c9f20

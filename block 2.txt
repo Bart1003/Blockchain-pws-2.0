@@ -1,2 +1,2 @@
-[{'index': 3, 'timestamp': 1643987218.058631, 'transactions': [{'sender': 'Mike', 'recipient': 'Alice', 'amount': '1 BTC'}, {'sender': 'Alice', 'recipient': 'Bob', 'amount': '0.5 BTC'}, {'sender': 'Bob', 'recipient': 'Mike', 'amount': '0.5 BTC'}, {'sender': 'Jaap', 'recipient': 'Kirsten', 'amount': '0 BTC'}], 'proof': 6789}]
-d09394007b241bffa7347541cf44fb852bdb7dd6050b85a8f077caf252d5027c
+[{'index': 3, 'transactions': [{'sender': 'Mike', 'recipient': 'Alice', 'amount': '1 Karstcoin'}, {'sender': 'Alice', 'recipient': 'Bob', 'amount': '0.5 Karstcoin'}, {'sender': 'Bob', 'recipient': 'Mike', 'amount': '0.5 Karstcoin'}, {'sender': 'Jaap', 'recipient': 'Karsten', 'amount': '0 Karstcoin'}], 'proof': 6789}]
+ee1c020e034a0d0e7c481639afce719aaec703397e5ca0d74c9d8a5d0a09e43c

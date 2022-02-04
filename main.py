@@ -1,7 +1,5 @@
 import hashlib
 import json
-from time import time
-
 
 class Blockchain():
   def __init__(self):
@@ -12,7 +10,6 @@ class Blockchain():
   def new_block(self, proof, previous_hash = None):
     block_info = {
       'index': len(self.chain) + 1,
-      'timestamp': time(),
       'transactions': self.pending_transactions,
       'proof': proof,
     }
@@ -34,7 +31,15 @@ class Blockchain():
       with open(str(name), 'r') as f:
         previous_hash = f.readlines()
         previous_hash2 = previous_hash[1]
+
+      
+      previous_hash3 = self.hash(self.chain[-1])
+      if previous_hash2 == previous_hash3:
+        print("block " + str(block_number - 1) + " is valid")
+      else:
+        print("blockchain is invalid")
       return previous_hash2
+      
       
     except:
      
@@ -66,20 +71,24 @@ class Blockchain():
 
 
 
+
 blockchain = Blockchain()
-t1 = blockchain.new_transaction("Satoshi", "Mike", '5 BTC')
-t2 = blockchain.new_transaction("Mike", "Satoshi", '1 BTC')
-t3 = blockchain.new_transaction("Satoshi", "Hal Finney", '5 BTC')
+t1 = blockchain.new_transaction("Satoshi", "Mike", '5 Karstcoin')
+t2 = blockchain.new_transaction("Mike", "Satoshi", '1 Karstcoin')
+t3 = blockchain.new_transaction("Satoshi", "Hal Finney", '5 Karstcoin')
 blockchain.new_block(12345)
 
-t4 = blockchain.new_transaction("Mike", "Alice", '1 BTC')
-t5 = blockchain.new_transaction("Alice", "Bob", '0.5 BTC')
-t6 = blockchain.new_transaction("Bob", "Mike", '0.5 BTC')
-t7 = blockchain.new_transaction("Jaap", "Kirsten", '0 BTC')
+t4 = blockchain.new_transaction("Mike", "Alice", '1 Karstcoin')
+t5 = blockchain.new_transaction("Alice", "Bob", '0.5 Karstcoin')
+t6 = blockchain.new_transaction("Bob", "Mike", '0.5 Karstcoin')
+t7 = blockchain.new_transaction("Jaap", "Karsten", '0 Karstcoin')
 blockchain.new_block(6789)
 
-t8 = blockchain.new_transaction("Tom", "Bern", '2 BTC')
+t8 = blockchain.new_transaction("Tim", "Bern", '2 Karstcoin')
 blockchain.new_block(125)
 
-t9 = blockchain.new_transaction("Bern", "Tim", '2 BTC')
+t9 = blockchain.new_transaction("Bern", "Tim", '2 Karstcoin')
 blockchain.new_block(420)
+
+t10 = blockchain.new_transaction("Bern", "Tim", '3 Karstcoin')
+blockchain.new_block(440)
