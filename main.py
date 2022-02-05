@@ -35,7 +35,7 @@ class Blockchain():
       
       previous_hash3 = self.hash(self.chain[-1])
       if previous_hash2 == previous_hash3:
-        print("block " + str(block_number - 1) + " is valid")
+        print("block " + str(block_number - 2) + " is valid")
       else:
         print("blockchain is invalid")
       return previous_hash2
@@ -95,6 +95,20 @@ blockchain.new_block(440)
 
 t11 = blockchain.new_transaction("Bern", "Tim", '3 Karstcoin')
 blockchain.new_block(442)
+
+t12 = blockchain.new_transaction("Alice", "Mike", '1 Karstcoin')
+t13 = blockchain.new_transaction("Bob", "Alice", '0.5 Karstcoin')
+t14 = blockchain.new_transaction("Mike", "Bob", '0.5 Karstcoin')
+t15 = blockchain.new_transaction("Joost", "Jaap", '0 Karstcoin')
+blockchain.new_block(101112)
+
+t11 = blockchain.new_transaction("Ester", "Rik", '5 Karstcoin')
+blockchain.new_block(442)
+
+t12 = blockchain.new_transaction("Satoshi", "Mike", '5 Karstcoin')
+t13 = blockchain.new_transaction("Mike", "Satoshi", '1 Karstcoin')
+t14 = blockchain.new_transaction("Satoshi", "Hal Finney", '5 Karstcoin')
+blockchain.new_block(131415)
 
 
 #Je kan een nieuw block aanmaken door een variatie op deze regel toe te voegen
